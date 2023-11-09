@@ -1,8 +1,7 @@
-# React + Vite
+# 2GEDA PRACTICE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![shot1](/src/assets/2geda1.png)
+![shot2](/src/assets/2geda2.png)
+![shot3](/src/assets/2geda3.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
