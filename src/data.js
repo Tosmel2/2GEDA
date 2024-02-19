@@ -15,25 +15,25 @@ export const popularExaminations = [
     id: 1,
     acronomy: "JAMB",
     examBody: "Joint Admission and Matriculation Board",
-    img: "../src/assets/jamb.svg",
+    img: "../../assets/jamb.svg",
   },
   {
     id: 2,
     acronomy: "POST UTME",
     examBody: "University Entrance Examinations",
-    img: "../src/assets/jamb.svg",
+    img: "../assets/jamb.svg",
   },
   {
     id: 3,
     acronomy: "WAEC",
     examBody: "West African Examination Council",
-    img: "../src/assets/waec.svg",
+    img: "../../src/assets/waec.svg",
   },
   {
     id: 4,
     acronomy: "NECO",
     examBody: "National Examinational Council",
-    img: "../src/assets/neco.svg",
+    img: "../assets/neco.svg",
   },
 ]
 
