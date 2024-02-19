@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-export const NoteToBusinessOwner = ({ onComplete }) => {
+export const NoteToBusinessOwner = ({ onComplete, onNextStep }) => {
   return (
   <>
     <div className="mx-auto md:w-[70%] w-[90%] py-8 ">
@@ -93,6 +93,7 @@ export const NoteToBusinessOwner = ({ onComplete }) => {
           onClick={() => {
             console.log('Button clicked!');
             onComplete();
+            onNextStep();
             // You may also want to perform additional actions before navigating
           }}
           className="flex w-[90%] md:w-[20%] justify-center rounded-md bg-[#4F0DA3] px-3 py-2 md:py-3 text-sm font-medium leading-6 text-white shadow hover:bg-[#783cc6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#783cc6]">Proceed to claim</button>
@@ -104,16 +105,18 @@ export const NoteToBusinessOwner = ({ onComplete }) => {
 }
 
 NoteToBusinessOwner.propTypes = {
-  onComplete: PropTypes.func.isRequired,
+  onComplete: PropTypes.func,
+  onNextStep: PropTypes.func, // Add this propType
 };
 
 const ClaimBusiness = () => {
-  const [currentStep, setCurrentStep] = useState('noteToBusinessOwner');
+  const [currentStep, setCurrentStep] = useState(0);
   const [stepsCompletion, setStepsCompletion] = useState({
     noteToBusinessOwner: false,
     businessDetails: false,
     uploadDocuments: false,
     verifyIdentity: false,
+    thankYouBusiness:false,
   });
 
   const handleStepCompletion = (step) => {
@@ -123,15 +126,15 @@ const ClaimBusiness = () => {
   const navigateToNextStep = () => {
     console.log('Current Step:', currentStep);
 
-    const steps = ['noteToBusinessOwner', 'businessDetails', 'uploadDocuments', 'verifyIdentity'];
+    const steps = ['noteToBusinessOwner', 'businessDetails', 'uploadDocuments', 'verifyIdentity', 'thankYouBusiness'];
     
     const currentIndex = steps.indexOf(currentStep);
 
     if (currentIndex < steps.length - 1) {
-      const nextStep = steps[currentIndex + 1];
+      // const nextStep = steps[currentIndex + 1];
 
-      if (stepsCompletion[currentStep]) {
-        setCurrentStep(nextStep);
+      if (stepsCompletion[steps[currentStep]]) {
+        setCurrentStep(currentStep + 1);
       } else {
         alert(`Please complete the ${currentStep} step before proceeding.`);
       }
@@ -143,14 +146,16 @@ const ClaimBusiness = () => {
 
   const renderCurrentStep = () => {
     switch (currentStep) {
-      case 'noteToBusinessOwner':
-        return <ThankYouBusiness onComplete={() => handleStepCompletion('noteToBusinessOwner')} />;
-      case 'businessDetails':
+      case 0:
+        return <NoteToBusinessOwner onComplete={() => handleStepCompletion('noteToBusinessOwner')} onNextStep={navigateToNextStep} />;
+      case 1:
         return <BusinessDetails onComplete={() => handleStepCompletion('businessDetails')} />;
-      case 'uploadDocuments':
+      case 2:
         return <UploadDocuments onComplete={() => handleStepCompletion('uploadDocuments')} />;
-      case 'verifyIdentity':
+      case 3:
         return <VerifyIdentity onComplete={() => handleStepCompletion('verifyIdentity')} />;
+      case 4:
+      return <ThankYouBusiness onComplete={() => handleStepCompletion('thankYouBusiness')} />;
       default:
         return null;
     }
@@ -177,7 +182,7 @@ const ClaimBusiness = () => {
           {/* <UploadDocuments /> */}
           {/* <VerifyIdentity /> */}
 
-          {currentStep !== 'noteToBusinessOwner' && <ProgressBar currentStep={currentStep} stepsCompletion={stepsCompletion} onContinue={navigateToNextStep} />}
+          {currentStep !== 0 && <ProgressBar currentStep={currentStep} stepsCompletion={stepsCompletion} onContinue={navigateToNextStep} />}
         
       </section>
 
@@ -393,7 +398,7 @@ export const ProgressBar = ({ currentStep, stepsCompletion,  onContinue }) => {
             <span
               key={index}
               className={`w-12 h-2 rounded-sm ${
-                currentStep === step || stepsCompletion[step]
+                currentStep === index || stepsCompletion[step]
                   ? 'bg-[#4F0DA3]'
                   : 'bg-gray-300'
               }`}
