@@ -1,4 +1,4 @@
-import { popularExaminations, otherExaminations } from "../data"
+import { popularExaminations, otherExaminations } from "../src/data"
 
 const Main = () => {
   return (

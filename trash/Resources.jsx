@@ -1,4 +1,4 @@
-import { resources, latestNews } from "../data"
+import { resources, latestNews } from "../src/data"
 
 
 const Resources = () => {

@@ -1,19 +1,29 @@
 import { popularExaminations, otherExaminations, resources, latestNews } from "../../data"
+import { useState } from 'react';
+import PostAdModal from "./PostAdModal";
 // import { Carousel } from 'flowbite-react';
 
 const Education = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   
   return (
     <>
-      <section className="gap-2 md:flex md:justify-between">
+    {isModalOpen && <PostAdModal closeModal={closeModal} />}
+      <section className={`gap-2 md:flex md:justify-between ${isModalOpen ? 'modal-open' : ''}`}>
         
       <div className='p-5 md:p-10 bg-white md:w-[65%] h-full'>
         <h1 className='text-lg font-bold'>Education</h1>
 
         <div className='h-full my-5 md:my-8 rounded-xl '>
-        <a href="/business/claim-business">
-            <img src="/src/assets/advertise.svg" alt="" className='object-cover w-full h-full rounded-xl' />
-          </a>
+            <img src="/src/assets/advertise.svg" onClick={openModal} alt="" className='object-cover w-full h-full cursor-pointer rounded-xl' />
           
         {/* <Carousel slideInterval={5000}>
           <img src="/src/assets/edu-waec.svg" alt="" className='object-cover w-full h-full rounded-xl' />
@@ -125,6 +135,8 @@ const Education = () => {
       </div>
       
       </section>
+      
+
     </>
   )
 }

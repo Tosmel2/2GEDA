@@ -19,3 +19,7 @@ p{
   overflow: hidden;
   transform: translateY(-10%);
 }
+
+.modal-open {
+  filter: blur(5px); 
+}
