@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "https://2-geda.vercel.app"
+      "source": "https://2-geda.vercel.app",
+      "destination": ["/education", "/business"]
     }
   ],
   "public": true
