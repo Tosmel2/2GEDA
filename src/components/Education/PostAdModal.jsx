@@ -72,7 +72,7 @@ export const PostAd = ({ nextStep }) => {
 
       <div className="p-4">
         <div className="flex items-center gap-2 md:p-4 p-2 bg-[#4F0DA3] text-white border border-[##B469EF] rounded-lg">
-        <img src="/src/assets/megaphone.svg" alt="" />
+        <img src="./assets/megaphone.svg" alt="" />
         <p>Reach out to World Audience in Large Numbers while you Pay Less.</p>
       </div>
 
@@ -148,7 +148,7 @@ export const MakeAdPayment= ({ nextStep }) => {
 
       <h1 className="text-[1.2rem] md:text-[1.8rem] font-medium">Make payment</h1>
 
-      <img src="/src/assets/logo.svg" height={50} width={50} alt="2geda-logo" />
+      <img src="./assets/logo.svg" height={50} width={50} alt="2geda-logo" />
     </div>
     <p className="py-2">You have selected</p>
     <div className="bg-[#FF8A15] flex rounded-md py-4 pl-2 justify-between items-center">
@@ -211,7 +211,7 @@ export const AdPaymentSuccessful = () => {
     <div className="w-[70%] bg-white py-6">
     {/* <div className="w-[70%] bg-white md:w-[40%] py-6"> */}
       <div className="flex flex-col items-center p-6 text-center">
-        <img src="/src/assets/thankyou.svg" alt="Thankyou svg" />
+        <img src="./assets/thankyou.svg" alt="Thankyou svg" />
 
         <p className="text-[1rem] md:text-[1.2rem] md:w-[60%] pt-4">Your payment was successful</p>
       </div>

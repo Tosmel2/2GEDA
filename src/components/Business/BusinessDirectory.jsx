@@ -3,13 +3,13 @@ import { businessDirectories } from "../../data"
 
 const BusinessDirectory = () => {
   const advertStyle = {
-    backgroundImage: 'url("/src/assets/ads.svg")',
+    backgroundImage: 'url("./assets/ads.svg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   };
 
   const advertStyle2 = {
-    backgroundImage: 'url("/src/assets/ads.svg")',
+    backgroundImage: 'url("./assets/ads.svg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',

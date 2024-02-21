@@ -208,17 +208,17 @@ export const BusinessDetails = () => {
         <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
           <div className="w-full md:my-2 col-span-full sm:col-span-3">
             <label htmlFor="businessName" className="text-sm">Business name</label>
-            <input id="businessName" type="text" placeholder="Enter business name" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="businessName" type="text" placeholder="Enter business name" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
           <div className="md:my-2 col-span-full sm:col-span-3">
             <label htmlFor="businessName" className="text-sm">Business address</label>
-            <input id="businessAddress" type="text" placeholder="Enter business address" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="businessAddress" type="text" placeholder="Enter business address" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
           <div className="md:my-2 col-span-full sm:col-span-3">
             <label htmlFor="businessDesc" className="text-sm">Business description</label>
-            <input id="businessDesc" type="text" placeholder="start typing" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="businessDesc" type="text" placeholder="start typing" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
           <div className="md:my-2 col-span-full sm:col-span-3">
@@ -229,18 +229,18 @@ export const BusinessDetails = () => {
                 <option value="+234">(NG)</option>
                 <option value="+44">(UK)</option>
               </select>
-              <input id="phoneNumber" type="number" placeholder="+1 (555) 000-0000" className="w-full shadow md:w-[85%] p-3 border-0 rounded-r-md sm:text-sm sm:leading-6 focus:outline-none" />
+              <input id="phoneNumber" type="number" placeholder="+1 (555) 000-0000" className="w-full shadow md:w-[85%] p-3 border border-[#4F0DA3] rounded-r-md sm:text-sm sm:leading-6 focus:outline-none" />
             </div>
           </div>
 
           <div className="md:my-2 col-span-full sm:col-span-3">
             <label htmlFor="email" className="text-sm">Email address</label>
-            <input id="email" type="email" placeholder="Enter email address" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="email" type="email" placeholder="Enter email address" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
           <div className="md:my-2 col-span-full sm:col-span-3">
             <label htmlFor="websiteLink" className="text-sm">Website(optional)</label>
-            <input id="websiteLink" type="text" placeholder="Enter website link" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="websiteLink" type="text" placeholder="Enter website link" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
         </div>
@@ -273,19 +273,19 @@ export const UploadDocuments = () => {
 
           <div className="relative w-full md:my-2 col-span-full">
           <label  className="text-sm">Business license or registration certificate</label>
-             <input id="businessLicense" type="file" placeholder="Choose file to upload" className="w-full p-3 bg-white border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" onChange={handleFileInputChange}/>
+             <input id="businessLicense" type="file" placeholder="Choose file to upload" className="w-full p-3 bg-white border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" onChange={handleFileInputChange}/>
 
              <label htmlFor="businessLicense" className="absolute px-2 py-1 text-white bg-[#4F0DA3] text-sm rounded-md cursor-pointer right-2 top-9 hidden md:inline-block">Select file</label>
           </div>
 
           <div className="md:my-2 col-span-full">
             <label htmlFor="taxId" className="text-sm">Tax ID Number</label>
-            <input id="taxId" type="number" placeholder="Enter tax identification number" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+            <input id="taxId" type="number" placeholder="Enter tax identification number" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
           </div>
 
           <div className="relative md:my-2 col-span-full">
             <label  className="text-sm">Utility Bill or lease agreement</label>
-             <input id="utilityBill" type="file" placeholder="Choose file to upload" className="w-full p-3 bg-white border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" onChange={handleFileInputChange}/>
+             <input id="utilityBill" type="file" placeholder="Choose file to upload" className="w-full p-3 bg-white border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" onChange={handleFileInputChange}/>
 
              <label htmlFor="utilityBill" className="absolute px-2 py-1 text-white bg-[#4F0DA3] text-sm rounded-md cursor-pointer right-2 top-9 hidden md:inline-block">Select file</label>
           </div>
@@ -312,17 +312,17 @@ export const VerifyIdentity = () => {
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
               <div className="w-full md:my-2 col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">First name</label>
-                <input id="firstname" type="text" placeholder="Enter your first name" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+                <input id="firstname" type="text" placeholder="Enter your first name" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
               </div>
 
               <div className="md:my-2 col-span-full sm:col-span-3">
                 <label htmlFor="lastname" className="text-sm">Last name</label>
-                <input id="lastname" type="text" placeholder="Enter your last name" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+                <input id="lastname" type="text" placeholder="Enter your last name" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
               </div>
 
               <div className="md:my-2 col-span-full sm:col-span-3">
                 <label htmlFor="email" className="text-sm">Email</label>
-                <input id="email" type="email" placeholder="Enter email address" className="w-full p-3 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
+                <input id="email" type="email" placeholder="Enter email address" className="w-full p-3 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" />
               </div>
 
               <div className="md:my-2 col-span-full sm:col-span-3">
@@ -333,13 +333,13 @@ export const VerifyIdentity = () => {
                         <option value="+234">(NG)</option>
                         <option value="+44">(UK)</option>
                       </select>
-                      <input id="phoneNumber" type="number" placeholder="+1 (555) 000-0000" className="w-full shadow md:w-[85%] p-3 border-0 rounded-r-md sm:text-sm sm:leading-6 focus:outline-none" />
+                      <input id="phoneNumber" type="number" placeholder="+1 (555) 000-0000" className="w-full shadow md:w-[85%] p-3 border border-[#4F0DA3] rounded-r-md sm:text-sm sm:leading-6 focus:outline-none" />
                     </div>
                   </div>
 
               <div className="md:my-2 col-span-full">
                 <label htmlFor="document" className="text-sm">Identification Document</label>
-                <select id="document" className="w-full px-4 py-4 border-0 rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" defaultValue="">
+                <select id="document" className="w-full px-4 py-4 border border-[#4F0DA3] rounded-md shadow sm:text-sm sm:leading-6 focus:outline-none" defaultValue="">
                   <option value="" disabled>Select one</option>
                   <option value="passport">Passport</option>
                   <option value="driverLicense">Driver{"'"}s License</option>
@@ -361,7 +361,7 @@ export const ThankYouBusiness = () => {
   return (
   <>
     <div className="flex flex-col items-center p-6 text-center">
-      <img src="/src/assets/thankyou.svg" alt="Thankyou svg" />
+      <img src="./assets/thankyou.svg" alt="Thankyou svg" />
 
       <p className="text-[1rem] md:text-[1.2rem] md:w-[60%] pt-4">Thank you for submitting your business claim. We are reviewing your details for accuracy and security. Watch your email for confirmation and further instructions.</p>
     </div>
