@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://2-geda.vercel.app"
+    }
+  ],
+  "public": true
+}
