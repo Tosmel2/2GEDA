@@ -58,7 +58,7 @@ const Education = () => {
         </div>
 
         <div className='flex items-center justify-center w-full my-8 h-44'>
-          <img src="/src/assets/qatar.jfif" alt="" className='w-full h-full' />
+          <img src="./src/assets/qatar.jfif" alt="" className='w-full h-full' />
         </div>
 
         <div className='other-examination'>
