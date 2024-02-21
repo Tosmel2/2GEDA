@@ -15,25 +15,25 @@ export const popularExaminations = [
     id: 1,
     acronomy: "JAMB",
     examBody: "Joint Admission and Matriculation Board",
-    img: "/src/assets/jamb.svg",
+    img: "./assets/JAMB.svg",
   },
   {
     id: 2,
     acronomy: "POST UTME",
     examBody: "University Entrance Examinations",
-    img: "/src/assets/jamb.svg",
+    img: "./assets/JAMB.svg",
   },
   {
     id: 3,
     acronomy: "WAEC",
     examBody: "West African Examination Council",
-    img: "/src/assets/waec.svg",
+    img: "./assets/waec.svg",
   },
   {
     id: 4,
     acronomy: "NECO",
     examBody: "National Examinational Council",
-    img: "/src/assets/neco.svg",
+    img: "./assets/neco.svg",
   },
 ]
 
@@ -42,27 +42,27 @@ export const resources = [
   {
     id: 1,
     about: "Nigerian Defence Academy entrance examination past questions 2012 to 2022",
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
   },
   {
     id: 2,
     about: "JAMB past questions 2012-2022",
-    img: "/src/assets/jamb.svg",
+    img: "./assets/JAMB.svg",
   },
   {
     id: 3,
     about: "LAUTECH Post-UTME screening form is out!",
-    img: "/src/assets/lautech.svg",
+    img: "./assets/LAUTECH.svg",
   },
   {
     id: 4,
     about: "UNILAG Post- UTME past questions 2012 to 2023",
-    img: "/src/assets/unilag.svg",
+    img: "./assets/unilag.svg",
   },
   {
     id: 5,
     about: "UI Post- UTME past questions 2012 to 2023",
-    img: "/src/assets/ui.svg",
+    img: "./assets/ui.svg",
   },
 ]
 
@@ -70,27 +70,27 @@ export const latestNews = [
   {
     id: 1,
     about: "UNILAG admission list first batch is out!",
-    img: "/src/assets/unilag.svg",
+    img: "./assets/unilag.svg",
   },
   {
     id: 2,
     about: "LAUTECH Post-UTME screening form is out",
-    img: "/src/assets/lautech.svg",
+    img: "./assets/LAUTECH.svg",
   },
   {
     id: 3,
     about: "WAEC 2023 result is out!",
-    img: "/src/assets/waec.svg",
+    img: "./assets/waec.svg",
   },
   {
     id: 4,
     about: "JAMB result 2023 is out!",
-    img: "/src/assets/jamb.svg",
+    img: "./assets/JAMB.svg",
   },
   {
     id: 5,
     about: "UI Post- UTME past questions 2012 to 2023",
-    img: "/src/assets/ui.svg",
+    img: "./assets/ui.svg",
   },
 ]
 
@@ -100,32 +100,32 @@ export const otherExaminations = [
     id: 1,
     acronomy: "NDA",
     examBody: "Nigeria Defence Academy",
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
   },
   {
     id: 2,
     acronomy: "NABTEB",
     examBody: "National Business and Technical Examinations Board",
-    img: "/src/assets/nabteb.svg",
+    img: "./assets/nabteb.svg",
   },
   {
     id: 3,
     acronomy: "NIMASA",
     examBody: "Nigerian Maritime Administration and Safety Agency",
-    img: "/src/assets/nimasa.svg",
+    img: "./assets/nimasa.svg",
   },
   {
     id: 4,
     acronomy: "TRCN PQE",
     examBody: "Teachers Registration Council of Nigeria Professional Qualifying Examination",
-    img:"/src/assets/trcn.svg",
+    img:"./assets/trcn.svg",
   },
 ]
 
 export const businessDirectories = [
   {
     id: 1,
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
     title: "Happy Burger Joint",
     address: "123 Main Street Los Angeles, CA 90001",
     about: "Happy Burger Joint is a family restaurant specializing in delicious, gourmet burgers and hand-cut fries. we offer a wide raing of burger options, from classic beef to vegetarian and vegan choices",
@@ -137,7 +137,7 @@ export const businessDirectories = [
   },
   {
     id: 2,
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
     title: "Happy Burger Joint",
     address: "123 Main Street Los Angeles, CA 90001",
     about: "Happy Burger Joint is a family restaurant specializing in delicious, gourmet burgers and hand-cut fries. we offer a wide raing of burger options, from classic beef to vegetarian and vegan choices",
@@ -149,7 +149,7 @@ export const businessDirectories = [
   },
   {
     id: 3,
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
     title: "Happy Burger Joint",
     address: "123 Main Street Los Angeles, CA 90001",
     about: "Happy Burger Joint is a family restaurant specializing in delicious, gourmet burgers and hand-cut fries. we offer a wide raing of burger options, from classic beef to vegetarian and vegan choices",
@@ -161,7 +161,7 @@ export const businessDirectories = [
   },
   {
     id: 4,
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
     title: "Happy Burger Joint",
     address: "123 Main Street Los Angeles, CA 90001",
     about: "Happy Burger Joint is a family restaurant specializing in delicious, gourmet burgers and hand-cut fries. we offer a wide raing of burger options, from classic beef to vegetarian and vegan choices",
@@ -173,7 +173,7 @@ export const businessDirectories = [
   },
   {
     id: 5,
-    img: "/src/assets/nda.svg",
+    img: "./assets/nda.svg",
     title: "Happy Burger Joint",
     address: "123 Main Street Los Angeles, CA 90001",
     about: "Happy Burger Joint is a family restaurant specializing in delicious, gourmet burgers and hand-cut fries. we offer a wide raing of burger options, from classic beef to vegetarian and vegan choices",

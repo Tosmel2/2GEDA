@@ -9,9 +9,9 @@ const Header = () => {
             {/* <div className="flex items-center"> */}
 
               <div className="flex-shrink-0">
-                <img className="w-10 h-10 md:hidden" src="/src/assets/logo.svg" alt="campipal logo" />
+                <img className="w-10 h-10 md:hidden" src="./assets/logo.svg" alt="2geda logo" />
 
-                <img className="hidden w-24 h-24 md:block" src="/src/assets/2geda-logo.svg" alt="campipal logo" />
+                <img className="hidden w-24 h-24 md:block" src="./assets/2geda-logo.svg" alt="2geda logo" />
               </div>
             {/* </div> */}
 
