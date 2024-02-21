@@ -23,7 +23,7 @@ const Education = () => {
         <h1 className='text-lg font-bold'>Education</h1>
 
         <div className='h-full my-5 md:my-8 rounded-xl '>
-            <img src="/src/assets/advertise.svg" onClick={openModal} alt="" className='object-cover w-full h-full cursor-pointer rounded-xl' />
+            <img src="https://2-geda.vercel.app/assets/advertise.svg" onClick={openModal} alt="" className='object-cover w-full h-full cursor-pointer rounded-xl' />
           
         {/* <Carousel slideInterval={5000}>
           <img src="/src/assets/edu-waec.svg" alt="" className='object-cover w-full h-full rounded-xl' />
