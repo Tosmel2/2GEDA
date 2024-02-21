@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "https://2-geda.vercel.app",
-      "destination": ["/education", "/business"]
-    }
-  ],
-  "public": true
-}
